@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+     integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     {% block head %}
+  <title>base</title>
+  {% endblock %}
+  </head>
+  <body>
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <a class="navbar-brand" href="/">ACES project</a>
+                    <li><a href="webapp/register.html">Register</a></li>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+
+
+
+          </div>
+        </div><!--/.container-fluid -->
+      </nav>
+    </div>
+    {%block body%}
+    {%endblock%}
+  </body>
+</html>

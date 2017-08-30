@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+   integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<title>Register</title>
+</head>
+<body>
+<div class="container">
+<h2>Registeration Form</h2>
+<p>Register here </p>
+<form action="" method="post">
+
+  {% csrf_token %}
+  E-mail : <br> <input type="text" name="email_reg" ><br><br>
+  First Name:<br> <input type="text" name="firstname" ><br><br>
+  Last Name:<br> <input type="text" name="lastname" ><br><br>
+  Password:<br> <input type="password" name="pass"><br><br>
+  <input type="submit" value="Register">
+</form>
+</div>
+</body>
+</html>
