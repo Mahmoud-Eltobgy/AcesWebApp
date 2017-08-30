@@ -15,6 +15,7 @@ def login_view(request):
         Password=form.cleaned_data.get('Password')
         user = authenticate(username= Email ,password=Password)
         login(request, user)
+        return render(request,'webapp/home.html')
     return render(request,"webapp/login.html",{'form':form,"title":title})
 
 def register_view(request):
