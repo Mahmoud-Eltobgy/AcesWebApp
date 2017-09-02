@@ -9,6 +9,7 @@
   {% endblock %}
   </head>
   <body>
+
     <br>
     <div class="container">
         <nav class="navbar navbar-default">
@@ -16,7 +17,8 @@
           <div class="navbar-header">
 
             <a class="navbar-brand" href="/">ACES project</a>
-                    <li><a href="webapp/register.html">Register</a></li>
+              {%block reg%}      <li><a href="/register">Register</a></li>{%endblock%}
+                  {%block login/out %}    <li><a href="/logout">logout</a></li>{%endblock%}
           </div>
           <div id="navbar" class="navbar-collapse collapse">
 
@@ -26,7 +28,7 @@
         </div><!--/.container-fluid -->
       </nav>
     </div>
-    {%block body%}
+  {%block body%}
     {%endblock%}
   </body>
 </html>

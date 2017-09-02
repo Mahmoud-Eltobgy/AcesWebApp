@@ -9,12 +9,8 @@
 <h2>Registeration Form</h2>
 <p>Register here </p>
 <form action="" method="post">
-
   {% csrf_token %}
-  E-mail : <br> <input type="text" name="email_reg" ><br><br>
-  First Name:<br> <input type="text" name="firstname" ><br><br>
-  Last Name:<br> <input type="text" name="lastname" ><br><br>
-  Password:<br> <input type="password" name="pass"><br><br>
+   {{form.as_p}}
   <input type="submit" value="Register">
 </form>
 </div>

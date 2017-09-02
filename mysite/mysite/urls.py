@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from mysite import views
-from webapp.views import login_view,register_view,logout_view
+from webapp.views import login_view,register_view,logout_view,home
 urlpatterns = [
+    url(r'^register/',register_view ,name='register'),
     url(r'^login/',login_view ,name='login'),
     url(r'^logout/',logout_view ,name='logout'),
+    url(r'^home/',home ,name='home'),
     url(r'^$',views.login_redirect, name='login_redirect'),
     url(r'^admin/', admin.site.urls),
     url(r'^webapp/',include('webapp.urls')),
